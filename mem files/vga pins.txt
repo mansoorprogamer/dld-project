@@ -1,0 +1,9 @@
+vga pins
+
+Red = G19 / H19/ J19/ N19
+
+
+
+BLU = N18 / L18 / K18 / J18
+HS = P19
+VS= R19

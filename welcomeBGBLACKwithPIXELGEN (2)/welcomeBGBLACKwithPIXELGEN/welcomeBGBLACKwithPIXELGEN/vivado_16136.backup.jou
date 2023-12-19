@@ -1,0 +1,187 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Dec 18 01:09:22 2023
+# Process ID: 16136
+# Current directory: C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11668 C:\Users\tariq\Desktop\welcomeBGBLACKwithPIXELGEN\welcomeBGBLACKwithPIXELGEN\welcomeBGBLACKwithPIXELGEN.xpr
+# Log file: C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/vivado.log
+# Journal file: C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.xpr
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/lvl0.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/lvl0.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/lvl0pal24bit.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/lvl0pal24bit.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/lvl100.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/lvl100.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/lvl100pal24bit.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/lvl100pal24bit.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/lvl50.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/lvl50.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/lvl50pal24bit.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/lvl50pal24bit.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/open.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/open.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/openpal24bit.mem}} -to_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/dld/openpal24bit.mem -filesets [get_filesets *]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/sprite2.mem}} -to_files C:/Users/tariq/Downloads/trex.mem -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/sprite24bit.mem}} -to_files C:/Users/tariq/Downloads/pal24bit.mem -filesets [get_filesets *]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/trex.mem}} -to_files {{C:/Users/tariq/Desktop/New folder/sprite2.mem}} -filesets [get_filesets *]
+update_files -from_files {{C:/Users/tariq/Desktop/New folder/pal24bit.mem}} -to_files {{C:/Users/tariq/Desktop/New folder/sprite24bit.mem}} -filesets [get_filesets *]
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.runs/impl_1/toplevelmodulelab11.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.runs/impl_1/toplevelmodulelab11.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_h.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_h.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_pixel.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_pixel.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_clock_divider.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_clock_divider.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_vga_sync.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_vga_sync.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_roms.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_roms.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_v.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_v.v
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/pixel_gen_cir.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/BowlingRom2.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/bowlingRom.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/vgasync.v]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.runs/impl_1/toplevelmodulelab11.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/adder_subtractor.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/toplevel.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/TopLevelModuleLab10.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/threebitFA.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myFULLADDER.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myXOR.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/demux.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/selective_2c.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/mux.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/hcount.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_clock_divider.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myAND.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myOR.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/decoder.v]
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/v_counter.v]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.runs/impl_1/toplevelmodulelab11.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.runs/impl_1/toplevelmodulelab11.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/BowlingRom2.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/BowlingRom2.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/BowlingRom2.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/TopLevelModuleLab10.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/TopLevelModuleLab10.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/TopLevelModuleLab10.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/adder_subtractor.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/adder_subtractor.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/adder_subtractor.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/bowlingRom.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/bowlingRom.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/bowlingRom.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/decoder.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/decoder.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/decoder.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/demux.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/demux.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/demux.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_clock_divider.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_clock_divider.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/dustbin_clock_divider.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/hcount.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/hcount.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/hcount.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/mux.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/mux.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/mux.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myAND.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myAND.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myAND.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myFULLADDER.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myFULLADDER.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myFULLADDER.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myOR.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myOR.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myOR.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myXOR.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myXOR.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/myXOR.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/pixel_gen_cir.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/pixel_gen_cir.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/pixel_gen_cir.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/selective_2c.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/selective_2c.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/selective_2c.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/threebitFA.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/threebitFA.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/threebitFA.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/toplevel.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/toplevel.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/toplevel.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/v_counter.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/v_counter.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/v_counter.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/vgasync.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/vgasync.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/vgasync.v
+set_property is_enabled false [get_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/constrs_1/new/test_and_const.xdc]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/motor.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/motor.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/screens.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/screens.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/screens.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/screens.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/screens.v
+close [ open C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/a.v w ]
+add_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/a.v
+export_ip_user_files -of_objects  [get_files C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/a.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/a.v
+file delete -force C:/Users/tariq/Desktop/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN/welcomeBGBLACKwithPIXELGEN.srcs/sources_1/new/a.v
